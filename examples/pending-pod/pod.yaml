@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pending-demo
+  namespace: dev
+spec:
+  nodeSelector:
+    disktype: impossible
+  containers:
+    - name: app
+      image: nginx:latest

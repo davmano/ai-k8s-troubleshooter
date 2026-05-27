@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bad-image-demo
+  namespace: dev
+spec:
+  containers:
+    - name: app
+      image: does-not-exist.invalid/app:latest
